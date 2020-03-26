@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>陈随易</title>
+        
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <!-- yue框架文件，不可删除 -->
+        <link rel="shortcut icon" href="../public/static/images/bagua.png" type="image/png" />
+        <link rel="stylesheet" href="../public/static/css/normalize.css" />
+        <link rel="stylesheet" href="../public/static/css/yigezi.min.css" />
+        <link rel="stylesheet" href="../public/public.css" />
+        <link rel="stylesheet" href="./index.css" />
+        
+    </head>
+    <body>
+        <div class="#app" id="app">
+            <router-view></router-view>
+        </div>
+        <script id="layout-default" type="text/x-template">
+            <div class="layout-default">
+                <components-toper></components-toper>
+                <div class="router-view-layout-default">
+                    <router-view></router-view>
+                </div>
+                <components-footer></components-footer>
+            </div>
+        </script>
+        
+        <script id="pages-index" type="text/x-template">
+            <div class="pages-index">
+                <div class="container">
+                    <div class="self"></div>
+                    <!-- 灯吊线 -->
+                    <div class="lamp-holder"></div>
+                    <!-- 灯 -->
+                    <div class="lamp"></div>
+                    <!-- 光 -->
+                    <div class="light"></div>
+                    <!-- 墙 -->
+                    <div class="wall"></div>
+                    <!-- 桌子 -->
+                    <div class="desk"></div>
+                    <!-- 电脑 -->
+                    <div class="screen">
+                        <div class="sidebar">
+                            <div class="h1"></div>
+                            <div class="h2"></div>
+                        </div>
+                        <div class="main">
+                            <!-- <div class="search"></div> -->
+                            <a href="" class="pen pen1">工具</a>
+                            <router-link to="/navigation" class="pen pen2">导航</router-link>
+                            <a href="" class="pen pen3">编程</a>
+                            <a href="" class="pen pen4">生活</a>
+                            <a href="" class="pen pen5">电影</a>
+                            <a href="" class="pen pen6">小说</a>
+                            <a href="" class="pen pen7">人物</a>
+                            <a href="" class="pen pen8">其他</a>
+                            <a href="" class="pen pen9">友链</a>
+                        </div>
+                    </div>
+                    <!-- 鼠标 -->
+                    <div class="mouse"></div>
+                    <!-- 键盘 -->
+                    <div class="keyboard"></div>
+                    <!-- 被子 -->
+                    <div class="cup">
+                        <div class="tea"></div>
+                        <div class="steam"></div>
+                    </div>
+                    <!-- 植物 -->
+                    <div class="plant">
+                        <div class="leaf1"></div>
+                        <div class="leaf2"></div>
+                        <div class="leaf3"></div>
+                    </div>
+                </div>
+            </div>
+        </script>
+        
+        <script id="pages-navigation" type="text/x-template">
+            <div class="pages-navigation">
+                <div class="menu">
+                    <div class="head">
+                        <div class="text">易导航</div>
+                    </div>
+                    <div class="list-group">
+                        <div class="list-line">常用</div>
+                        <div class="list-line">编程</div>
+                        <div class="list-line">娱乐</div>
+                        <div class="list-line">游戏</div>
+                    </div>
+                </div>
+                <div class="main">
+                    <div class="box">知乎</div>
+                </div>
+            </div>
+        </script>
+        
+        <script id="components-toper" type="text/x-template">
+            <div class="components-toper"></div>
+        </script>
+        
+        <script id="components-footer" type="text/x-template">
+            <div class="components-footer"></div>
+        </script>
+        
+        <!-- 核心库 -->
+        <script src="../public/static/js/vue.js"></script>
+        <script src="../public/static/js/vue-router.js"></script>
+        <script src="../public/static/js/vuex.js"></script>
+        <script src="../public/static/js/axios.js"></script>
+        <script src="../public/static/js/lodash.js"></script>
+        <script src="../public/static/js/store2.js"></script>
+        <script src="../public/static/js/store.cache.js"></script>
+        <!-- 开发依赖 -->
+        <!-- 自定义脚本 -->
+        <script src="../public/public.js"></script>
+        <script src="./index.js"></script>
+        
+    </body>
+</html>
